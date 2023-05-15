@@ -110,7 +110,7 @@
                                         <x-text-input name="address" placeholder="Endereço" value="{{ $hotel->address }}" required> </x-text-input>
                                         <x-text-input name="number_rooms" placeholder="Quantidade de Quartos" value="{{ $hotel->number_rooms }}" required> </x-text-input>
                                         <select required name="classification">
-                                            <option value="{{ $hotel->classification}}"> {{ $hotel->classification}}</option>
+                                            <option hidden value="{{ $hotel->classification}}"> {{ $hotel->classification}}</option>
                                             <option value="1 Estrela">1 Estrela</option>
                                             <option value="2 Estrela">2 Estrelas</option>
                                             <option value="3 Estrela">3 Estrelas</option>
@@ -120,7 +120,7 @@
 
                                         <x-input-label for="breakfast" :value="__('Café da manhã incluso:')" ></x-input-label>
                                         <select required name="breakfast">
-                                            <option value="{{ $hotel->breakfast }}"> {{ $hotel->breakfast }}</option>
+                                            <option hidden value="{{ $hotel->breakfast }}"> {{ $hotel->breakfast }}</option>
                                             <option value="Sim">Sim</option>
                                             <option value="Não">Não</option>
                                         </select>
